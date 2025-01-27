@@ -15,4 +15,5 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "./tap_dance/tap_dance.h"
-#include "./leader_key/leader_key.c"
+#include "./leader_key/leader_key.h"
+#include "./rgb/rgb.h"
