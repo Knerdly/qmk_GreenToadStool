@@ -2,7 +2,7 @@
 #define KEY_REPEAST_RATE 50
 
 // Tap Dance Settings
-#define TAPPING_TERM 500
+#define TAPPING_TERM 225
 #define TAPPING_TERM_PER_KEY
 
 // LED RGB Settings
