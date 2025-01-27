@@ -5,7 +5,7 @@ void esc_tap_dance_fn(tap_dance_state_t *state, void *user_data) {
     switch (state->count) {
         case 1:
             // Single tap = ESC key (normal behavior)
-            tap_code(KC_SYRQ);
+            tap_code(KC_PAUS);
             break;
         case 2:
             // Double tap = Sytem Request
