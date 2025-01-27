@@ -23,12 +23,8 @@
 // Declare the tap dance actions array
 extern tap_dance_action_t tap_dance_actions[];
 
-// Function prototypes
-// esc button
-void esc_tap_dance_fn(tap_dance_state_t *state, void *user_data);
-
-// caps lock
-void caps_tab_dance_fn(tap_dance_state_t *state, vpoid *user_data);
+#include "esc_key.h"
+#include "caps_key.h"
 
 // Descriptive TD key codes
 #define TD_ESC TD(0)
