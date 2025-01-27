@@ -14,7 +14,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "tap_dance.h"
-// #ifdef TAP_DANCE_ENABLE
+#ifdef TAP_DANCE_ENABLE
 
 //  Tap Dances for the future:
 // - Send a password (only if secure enough)
@@ -65,4 +65,4 @@ void esc_reset(tap_dance_state_t *state, void *user_data) {
 tap_dance_action_t tap_dance_actions[] = {
     [0] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, esc_tap_dance_fn, esc_reset),
 };
-// #endif // TAP_DANCE_ENABLE
+#endif // TAP_DANCE_ENABLE

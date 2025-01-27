@@ -16,7 +16,7 @@
 #ifndef TAP_DANCE_H
 #define TAP_DANCE_H
 
-#include QMK_KEYBOARD_H
+// #include QMK_KEYBOARD_o
 #include "process_tap_dance.h"
 
 // Declare the tap dance actions array
