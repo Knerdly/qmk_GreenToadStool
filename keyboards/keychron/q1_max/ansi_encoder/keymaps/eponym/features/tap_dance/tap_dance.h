@@ -14,9 +14,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef TAP_DANCE_H
-#define TAP_DANCE_H
-
 #include QMK_KEYBOARD_H
 #include "process_tap_dance.h"
 
@@ -28,5 +25,3 @@ extern tap_dance_action_t tap_dance_actions[];
 
 // Descriptive TD key codes
 #define TD_ESC TD(0)
-
-#endif // TAP_DANCE_H
