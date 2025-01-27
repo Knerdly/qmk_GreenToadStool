@@ -29,4 +29,5 @@
 // Define the tap dance actions array
 tap_dance_action_t tap_dance_actions[] = {
     [0] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, esc_tap_dance_fn, esc_reset),
+    [1] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, caps_tap_dance_fn, caps_reset),
 };
