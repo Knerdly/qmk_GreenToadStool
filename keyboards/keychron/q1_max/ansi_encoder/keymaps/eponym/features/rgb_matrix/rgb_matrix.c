@@ -25,3 +25,22 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     }
     return false;
 }
+
+// #ifdef RGBLIGHT_ENABLE
+// void rgb_matrix_indicators_user(void) {
+//     switch (biton32(layer_state)) {
+//         case 0: // Base layer
+//             rgblight_sethsv_noeeprom(HSV_BLUE);
+//             break;
+//         case 1: // Function layer
+//             rgblight_sethsv_noeeprom(HSV_GREEN);
+//             break;
+//         case 2: // Gaming layer
+//             rgblight_sethsv_noeeprom(HSV_RED);
+//             break;
+//         default: // Any other layers
+//             rgblight_sethsv_noeeprom(HSV_WHITE);
+//             break;
+//     }
+// }
+// #endif

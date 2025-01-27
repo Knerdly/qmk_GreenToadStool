@@ -42,10 +42,8 @@
 #include QMK_KEYBOARD_H
 #include "keychron_common.h"
 
-// #include "./features/tap_dance/tap_dance.c"
-// #include "./features/leader_key/leader_key.c"
-// #include "./features/rgb/rgb.c"
 #include "./features/features.c"
+
 #include "./layers/layers.c"
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
