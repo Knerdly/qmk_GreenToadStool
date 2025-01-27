@@ -1,6 +1,8 @@
 #define KEY_REPEAT_DELAY 350
 #define KEY_REPEAST_RATE 50
 
+#include "./features/config.h"
+
 // Tap Dance Settings
 #define TAPPING_TERM 225
 #define TAPPING_TERM_PER_KEY
