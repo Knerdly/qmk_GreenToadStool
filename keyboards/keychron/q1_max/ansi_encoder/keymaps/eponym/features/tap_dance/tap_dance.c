@@ -23,7 +23,9 @@
 //      - Numbers keys might be perfect - move BT functions
 enum {
     TD_ESC,
+    TD_CAPS,
 };
  tap_dance_action_t tap_dance_actions[] = {
     [TD_ESC] = ACTION_TAP_DANCE_DOUBLE(KC_PAUS, KC_ESC),
+    [TD_CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_SLSH, KC_CAPS),
 };
