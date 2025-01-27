@@ -41,17 +41,11 @@
 
 #include QMK_KEYBOARD_H
 #include "keychron_common.h"
-#include "keymap.h"
+// #include "keymap.h"
 
-// #include "./features/features.c"
-
-enum {
-    TD_ESC,
-};
-
- tap_dance_action_t tap_dance_actions[] = {
-    [TD_ESC] = ACTION_TAP_DANCE_DOUBLE(KC_PAUS, KC_ESC),
-};
+#include "./features/tap_dance/tap_dance.c"
+#include "./features/leader_key/leader_key.c"
+#include "./features/rgb/rgb.c"
 
 #include "./layers/layers.c"
 

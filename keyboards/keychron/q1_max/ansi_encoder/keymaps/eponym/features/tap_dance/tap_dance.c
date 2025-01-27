@@ -21,7 +21,9 @@
 // - Switch layers
 //      - Always go to a default layer
 //      - Numbers keys might be perfect - move BT functions
-
+enum {
+    TD_ESC,
+};
  tap_dance_action_t tap_dance_actions[] = {
     [TD_ESC] = ACTION_TAP_DANCE_DOUBLE(KC_PAUS, KC_ESC),
 };
