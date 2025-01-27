@@ -42,8 +42,8 @@
 #include QMK_KEYBOARD_H
 #include "keychron_common.h"
 #include "keymap.h"
-#include "./features/tap_dance.h"
-#include "./features/leader_key.h"
+
+#include "./features/features.c"
 
 #include "./layers/layers.c"
 

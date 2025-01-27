@@ -14,5 +14,5 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-// #include "./features/tap_dance.h"
+#include "./tap_dance/tap_dance.h"
 #include "./leader_key/leader_key.c"
