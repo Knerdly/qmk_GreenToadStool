@@ -1,3 +1,4 @@
+// clang-format off
 /* Copyright 2023 @ Keychron (https://www.keychron.com)
  *
  * This program is free software: you can redistribute it and/or modify
@@ -13,10 +14,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-// clang-format off
 #ifndef RGB_H
-#define RBB_H
+#    define RBB_H
 
-// do stuff here
+#    include QMK_KEYBOARD_H
 
 #endif // RGB_H

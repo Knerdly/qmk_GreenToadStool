@@ -1,3 +1,4 @@
+// clang-format off
 /* Copyright 2023 @ Keychron (https://www.keychron.com)
  *
  * This program is free software: you can redistribute it and/or modify
@@ -13,7 +14,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "options.c"
 #include "./tap_dance/tap_dance.h"
 #include "./leader_key/leader_key.h"
 #include "./rgb/rgb.h"
