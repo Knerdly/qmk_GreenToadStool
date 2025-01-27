@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "tap_dance.h"
+// #include "tap_dance.h"
 
 //  Tap Dances for the future:
 // - Send even more modifiers
@@ -22,14 +22,6 @@
 //      - Always go to a default layer
 //      - Numbers keys might be perfect - move BT functions
 
-// #include "esc_key.c"
-// #include "caps_key.c"
-
-// Define the tap dance actions array
-// tap_dance_action_t tap_dance_actions[] = {
-//     [0] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, esc_tap_dance_fn, esc_reset),
-//     [1] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, caps_tap_dance_fn, caps_reset),
-// };
  tap_dance_action_t tap_dance_actions[] = {
     [TD_ESC] = ACTION_TAP_DANCE_DOUBLE(KC_PAUS, KC_ESC),
 };
