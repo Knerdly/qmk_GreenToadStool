@@ -1,3 +1,6 @@
+#define RGB_MATRIX_DISABLE_SHARED_KEYCODES // RGB and RGB Matrix codes won't be shared
+
+// https://docs.qmk.fm/features/rgb_matrix
 // LED RGB Settings
 #define RGB_MATRIX_KEYRELEASES // reactive effects respond to keyreleases (instead of keypresses)
 // #define RGB_MATRIX_TIMEOUT 0         // number of milliseconds to wait until rgb automatically turns off

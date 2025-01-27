@@ -14,6 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+void matrix_init_user(void) {
+    rgblight_enable(); // Enable RGB lighting
+    rgblight_sethsv_noeeprom(HSV_CHARTREUSE); // Set your favorite color
+}
 
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     if (host_keyboard_led_state().caps_lock) {
@@ -23,24 +27,20 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
             }
         }
     }
+        switch (biton32(layer_state)) {
+        case 0: // Base layer
+            rgblight_sethsv_noeeprom(HSV_BLUE);
+            break;
+        case 1: // Function layer
+            rgblight_sethsv_noeeprom(HSV_GREEN);
+            break;
+        case 2: // Gaming layer
+            rgblight_sethsv_noeeprom(HSV_RED);
+            break;
+        default: // Any other layers
+            rgblight_sethsv_noeeprom(HSV_WHITE);
+            break;
+    }
+
     return false;
 }
-
-// #ifdef RGBLIGHT_ENABLE
-// void rgb_matrix_indicators_user(void) {
-//     switch (biton32(layer_state)) {
-//         case 0: // Base layer
-//             rgblight_sethsv_noeeprom(HSV_BLUE);
-//             break;
-//         case 1: // Function layer
-//             rgblight_sethsv_noeeprom(HSV_GREEN);
-//             break;
-//         case 2: // Gaming layer
-//             rgblight_sethsv_noeeprom(HSV_RED);
-//             break;
-//         default: // Any other layers
-//             rgblight_sethsv_noeeprom(HSV_WHITE);
-//             break;
-//     }
-// }
-// #endif
