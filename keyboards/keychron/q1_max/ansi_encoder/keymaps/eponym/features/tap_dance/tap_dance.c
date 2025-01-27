@@ -22,12 +22,14 @@
 //      - Always go to a default layer
 //      - Numbers keys might be perfect - move BT functions
 
-#include "esc_key.c"
-#include "caps_key.c"
-
+// #include "esc_key.c"
+// #include "caps_key.c"
 
 // Define the tap dance actions array
-tap_dance_action_t tap_dance_actions[] = {
-    [0] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, esc_tap_dance_fn, esc_reset),
-    [1] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, caps_tap_dance_fn, caps_reset),
+// tap_dance_action_t tap_dance_actions[] = {
+//     [0] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, esc_tap_dance_fn, esc_reset),
+//     [1] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, caps_tap_dance_fn, caps_reset),
+// };
+ tap_dance_action_t tap_dance_actions[] = {
+    [TD_ESC] = ACTION_TAP_DANCE_DOUBLE(KC_PAUS, KC_ESC),
 };
