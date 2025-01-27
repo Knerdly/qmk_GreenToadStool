@@ -17,7 +17,6 @@
 #include "tap_dance.h"
 
 //  Tap Dances for the future:
-// - Send a password (only if secure enough)
 // - Send even more modifiers
 // - Switch layers
 //      - Always go to a default layer
