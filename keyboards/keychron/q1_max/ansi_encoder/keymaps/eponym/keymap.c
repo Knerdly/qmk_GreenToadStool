@@ -50,15 +50,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (!process_record_keychron_common(keycode, record)) {
         return false;
     }
-
+    // Flash a color when enter is tapped
     switch (keycode) {
     case KC_ENTER:
-        rgb_matrix_set_color_all(RGB_GREEN);
+        rgb_matrix_set_color_all(HSV_BLUE);
         return true;
     default:
         return true;
     }
 }
+
+
+
 
 void leader_start_user(void) {}
 void leader_end_user(void) {

@@ -16,7 +16,7 @@
  */
 void matrix_init_user(void) {
     rgblight_enable(); // Enable RGB lighting
-    rgblight_sethsv_noeeprom(HSV_CHARTREUSE); // Set your favorite color
+    // rgblight_sethsv_noeeprom(HSV_CHARTREUSE); // Set your favorite color
 }
 
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
@@ -27,19 +27,22 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
             }
         }
     }
-        switch (biton32(layer_state)) {
-        case 0: // Base layer
-            rgblight_sethsv_noeeprom(HSV_BLUE);
-            break;
-        case 1: // Function layer
-            rgblight_sethsv_noeeprom(HSV_GREEN);
-            break;
-        case 2: // Gaming layer
-            rgblight_sethsv_noeeprom(HSV_RED);
-            break;
-        default: // Any other layers
-            rgblight_sethsv_noeeprom(HSV_WHITE);
-            break;
+    switch (biton32(layer_state)) {
+    case 0: // Mac Base layer
+        rgblight_sethsv_noeeprom(HSV_GREEN);
+        break;
+    case 1: // Mac Function layer
+        rgblight_sethsv_noeeprom(HSV_PURPLE);
+        break;
+    case 2: // Win Base layer
+        rgblight_sethsv_noeeprom(HSV_RED);
+        break;
+    case 3: // Win Base layer
+        rgblight_sethsv_noeeprom(HSV_BLUE);
+        break;
+    default: // Any other layers
+        rgblight_sethsv_noeeprom(HSV_WHITE);
+        break;
     }
 
     return false;
