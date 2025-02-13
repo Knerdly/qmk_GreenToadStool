@@ -27,5 +27,5 @@ enum {
 };
  tap_dance_action_t tap_dance_actions[] = {
     [TD_ESC] = ACTION_TAP_DANCE_DOUBLE(KC_NUM, KC_ESC),
-    [TD_CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_SLSH, KC_CAPS),
+    [TD_CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_ESC, KC_CAPS),
 };
